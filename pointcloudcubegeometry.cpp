@@ -22,8 +22,8 @@ void PointCloudCubeGeometry::updateData()
     float *p = reinterpret_cast<float *>(vertexData.data());
 
     QByteArray indexes;
-    indexes.resize(m_fPointCount * sizeof(u_int32_t) * 3 * 2);
-    u_int32_t *idx = reinterpret_cast<u_int32_t *>(indexes.data());
+    indexes.resize(m_fPointCount * sizeof(uint32_t) * 3 * 2);
+    uint32_t *idx = reinterpret_cast<uint32_t *>(indexes.data());
 
 
     for (int i = 0; i < m_fPointCount; ++i) {
