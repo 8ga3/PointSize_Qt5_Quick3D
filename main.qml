@@ -60,7 +60,7 @@ Window {
             position: Qt.vector3d(0, 0, 300)
             scale: Qt.vector3d(scale_size, scale_size, scale_size)
 
-            property real scale_size: (cube.scale.x * 10.0) / (mainView3d.width < mainView3d.height ? mainView3d.width : mainView3d.height) * Math.SQRT1_2
+            property real scale_size: (cube.scale.x * 10.0) / (mainView3d.width < mainView3d.height ? mainView3d.width : mainView3d.height) * Math.SQRT2 / Screen.devicePixelRatio
         }
 
         WasdController {
